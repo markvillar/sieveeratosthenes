@@ -1,5 +1,3 @@
-package sieveeratosthenes;
-
 /**
  *
  * @author UP773229
