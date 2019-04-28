@@ -48,7 +48,7 @@ class SieveEratosthenes {
         Integer n = 8;
         
         System.out.print("Following are the prime numbers ");
-        System.out.println("smaller than or equal to " + n);
+        System.out.println("are less than " + n);
         SieveEratosthenes g = new SieveEratosthenes();
         g.sieveOfEratosthenes(n);
     }
