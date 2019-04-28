@@ -45,7 +45,7 @@ class SieveEratosthenes {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number: ");
         //int n = sc.nextInt();
-        Integer n = new Integer(8);
+        Integer n = 8;
         
         System.out.print("Following are the prime numbers ");
         System.out.println("smaller than or equal to " + n);
