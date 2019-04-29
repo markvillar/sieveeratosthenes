@@ -4,14 +4,12 @@
  * and open the template in the editor.
  */
 
-
 /**
  *
  * @author UP773229
  */
-import java.util.Scanner;
 
-class SieveEratosthenes {
+class SieveEratosthenes extends Thread {
 
     void sieveOfEratosthenes(int n) {
         // Create a boolean array "prime[0..n]" and initialize 
@@ -40,17 +38,5 @@ class SieveEratosthenes {
             }
         }
     }
-
-    // Driver Program to test above function 
-    public static void main(String args[]) {
-        
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number: ");
-        int n = sc.nextInt();
-        
-        System.out.print("Following are the prime numbers ");
-        System.out.println("smaller than or equal to " + n);
-        SieveEratosthenes g = new SieveEratosthenes();
-        g.sieveOfEratosthenes(n);
-    }
+    
 }
