@@ -57,11 +57,19 @@ public class Main {
         //Temporary
         int listLength = generatedNumbers.size();
 
+        //Start timers
+        long startTime = System.currentTimeMillis();
+        long startTimeNano = System.nanoTime();
+
         //Test the values
         generatedNumbers.forEach((number) -> {
             boolean result = checkIfPrime(number);
             primes.set(number, result);
         });
+
+        //End timers
+        long endTimeNano = System.nanoTime();
+        long endTime = System.currentTimeMillis();
 
         //Output the results
         for (int iterator = 0; iterator < primes.size(); iterator++) {
@@ -75,7 +83,10 @@ public class Main {
             }
 
         }
-        
+
+        System.out.println("Calculated in " + (endTimeNano - startTimeNano) + " nanoseconds");
+        System.out.println("Calculated in " + (endTime - startTime) + " milliseconds");
+
     }
 
 }
